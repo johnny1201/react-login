@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+
+  const navigate = useNavigate(); // AGORA está dentro da função Login
 
   const users = {
     joamiguel: "jm123",
@@ -22,7 +25,7 @@ function Login() {
       return;
     }
     setError("");
-    window.location.href = "/home"; // Redireciona para a página inicial
+    navigate("/home"); // Agora navega corretamente
   };
 
   return (
