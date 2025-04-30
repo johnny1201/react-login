@@ -9,3 +9,5 @@ package-lock.json
 
 # Ignorar arquivos de configuração do editor (exemplo: Visual Studio Code)
 .vscode/
+
+build/
