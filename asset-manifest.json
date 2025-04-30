@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/react-login/static/js/main.cb0aee89.js",
+    "index.html": "/react-login/index.html",
+    "main.cb0aee89.js.map": "/react-login/static/js/main.cb0aee89.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.cb0aee89.js"
+  ]
+}
