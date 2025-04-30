@@ -1,0 +1,76 @@
+.home-container {
+  background-color: #121212; /* Fundo escuro */
+  color: white;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.home-header {
+  padding: 20px;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.username {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.home-main {
+  padding: 20px;
+  background-color: #121212;
+  color: white;
+}
+
+.home-main h2 {
+  font-size: 2rem;
+}
+
+.home-main p {
+  font-size: 1.1rem;
+}
+
+.anime-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajuste para grid */
+  gap: 15px; /* Menos espaçamento entre os cards */
+  justify-items: center; /* Centraliza os cards na tela */
+  margin-top: 30px;
+}
+
+.anime-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  max-width: 200px;
+  flex-direction: column; /* Garante que a imagem fique em cima do texto */
+  align-items: center;
+  justify-content: flex-start; /* Ajusta a posição do conteúdo dentro do card */
+  padding: 0; /* Remove qualquer padding extra */
+  margin: 0; /* Remove qualquer margem extra */
+  box-sizing: border-box; /* Garante que padding e border não afetem o layout */
+}
+
+.anime-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.3);
+}
+
+.anime-card img {
+  width: 100%; /* A largura da imagem será 100% do card */
+  height: auto; /* Ajusta automaticamente a altura para manter a proporção */
+  aspect-ratio: 12/16; /* A proporção de 16:9 é próxima da proporção 0.58, então isso ajusta a altura em relação à largura */
+}
+
+.anime-card h3 {
+  margin: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0; /* Remove qualquer padding no título */
+}
