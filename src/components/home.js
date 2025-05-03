@@ -14,7 +14,7 @@ function Home() {
     {
       id:2,
       name: "Naruto",
-      image: "https://animesonline.cloud/wp-content/uploads/2023/12/9ptbVZpKNy5NY9D4zq4KGiYWRQY-200x300.jpg.webp",
+      image: "https://pm1.aminoapps.com/6377/2d621bc0334eebee880e45927dd8dab2a1ae5c4c_hq.jpg",
     },
     {
       id: 3,
