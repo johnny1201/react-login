@@ -9,17 +9,17 @@ function Home() {
     {
       id: 1,
       name: "Naruto Shippuden",
-      image: "https://cdn.myanimelist.net/images/anime/5/17407.jpg", // capa confiável
+      image: "https://cdn.myanimelist.net/images/anime/5/17407.jpg", // capa confiável naruto shippuden
     },
     {
       id:2,
       name: "Naruto",
-      image: "https://pm1.aminoapps.com/6377/2d621bc0334eebee880e45927dd8dab2a1ae5c4c_hq.jpg",
+      image: "https://cdn.myanimelist.net/images/anime/13/17405.jpg", //capa confiável naruto clássico
     },
     {
       id: 3,
       name: "OnePiece",
-      image: "https://cdn.myanimelist.net/images/anime/6/73245.jpg", // capa confiável
+      image: "https://cdn.myanimelist.net/images/anime/6/73245.jpg", // capa confiável One Piece
     },
     
   ];
