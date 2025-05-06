@@ -13,7 +13,7 @@ function Episodes() {
       <button onClick={() => navigate(-1)} className="back-button left">
         <i className="fas fa-undo-alt"></i>
       </button>
-      <button onClick={() => navigate("/")} className="back-button right">
+      <button onClick={() => navigate("/home")} className="back-button right">
         <i className="fas fa-home"></i>
       </button>
 

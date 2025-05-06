@@ -22,8 +22,9 @@
   
   .player-header h2 {
     font-size: 2rem;
-    margin: auto;
-    flex-basis: 100%; /* Garante que o título ocupe a linha inteira caso os botões desçam */
+    margin-top: 30px;
+    flex-basis: 100%; 
+    text-align: center;
   }
 
   .header-buttons {
@@ -46,22 +47,6 @@
     right: 20px;
   }
   
-  @media (max-width: 600px) {
-    .player-header {
-      flex-direction: column; /* Faz os botões ficarem em uma coluna em telas pequenas */
-      align-items: flex-start; /* Alinha os itens à esquerda */
-    }
-  
-    .back-button.left,
-    .back-button.right {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
-  
-  h2 {
-    text-align: center;
-  }
   .video-container {
     display: flex;
     flex-direction: column;
@@ -91,5 +76,12 @@
   
   button:hover {
     background-color: #cc0000;
+  }
+  .controls-container {
+    display: flex;
+
+  }
+  .control-button {
+    margin: 0 10px;
   }
   

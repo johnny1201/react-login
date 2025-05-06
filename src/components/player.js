@@ -44,10 +44,10 @@ function Player() {
     <div className="player-container" key={`${anime}-${id}`}>
       <header className="player-header">
         <div className="header-buttons">
-          <button onClick={() => navigate(-1)} className="back-button left">
+          <button onClick={() => navigate("/episodes")} className="back-button left">
             <i className="fas fa-undo-alt"></i>
           </button>
-          <button onClick={() => navigate("/")} className="back-button rigth">
+          <button onClick={() => navigate("/home")} className="back-button right">
             <i className="fas fa-home"></i>
           </button>
         </div>
@@ -55,7 +55,7 @@ function Player() {
       </header>
 
       <div className="video-container">
-        <video controls>
+        <video controls autoPlay>
           <source src={videoUrl} type="video/mp4" />
           Seu navegador não suporta a tag de vídeo.
         </video>
