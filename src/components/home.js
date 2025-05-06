@@ -10,16 +10,19 @@ function Home() {
       id: 1,
       name: "Naruto Shippuden",
       image: "https://cdn.myanimelist.net/images/anime/5/17407.jpg", // capa confiável naruto shippuden
+      episodes: 500,
     },
     {
       id:2,
       name: "Naruto",
       image: "https://cdn.myanimelist.net/images/anime/13/17405.jpg", //capa confiável naruto clássico
+      episodes: 220,
     },
     {
       id: 3,
       name: "OnePiece",
       image: "https://cdn.myanimelist.net/images/anime/6/73245.jpg", // capa confiável One Piece
+      episodes: 1106,
     },
     
   ];
@@ -27,10 +30,10 @@ function Home() {
   return (
     <div className="home-container">
       <header className="home-header">
+        <h2>Lista de animes</h2>
         <div className="username">{username ? `Bem-vindo, ${username}` : "Usuário não encontrado"}</div>
       </header>
       <main className="home-main">
-        <h2>Lista de animes</h2>
         <p>O melhor lugar para quem é fã de animes!</p>
 
         <div className="anime-list">

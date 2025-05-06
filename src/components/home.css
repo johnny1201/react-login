@@ -1,3 +1,11 @@
+/* components/home.css */
+*,*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .home-container {
   background-color: #121212; /* Fundo escuro */
   color: white;
@@ -22,21 +30,29 @@
   padding: 20px;
   background-color: #121212;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  justify-content: flex-start; /* Garante que o conteúdo fique alinhado ao topo */
+  height: calc(100vh - 60px); /* Ajusta o tamanho para garantir que o conteúdo ocupe o restante da tela */
 }
 
 .home-main h2 {
   font-size: 2rem;
+  text-align: center; /* Garante a centralização do título */
+  margin-top: 20px; /* Dá um pequeno espaçamento */
+  width: 100%; /* Garante que o título ocupe toda a largura do seu container */
 }
 
 .home-main p {
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .anime-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajuste para grid */
-  gap: 15px; /* Menos espaçamento entre os cards */
-  justify-items: center; /* Centraliza os cards na tela */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajusta para exibir os cards em grid */
+  gap: 20px; /* Distância fixa de 20px entre os cards */
   margin-top: 30px;
 }
 
@@ -48,12 +64,10 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   display: flex;
-  max-width: 200px;
   flex-direction: column; /* Garante que a imagem fique em cima do texto */
   align-items: center;
   justify-content: flex-start; /* Ajusta a posição do conteúdo dentro do card */
-  padding: 0; /* Remove qualquer padding extra */
-  margin: 0; /* Remove qualquer margem extra */
+  max-width: 200px; /* Largura fixa para manter os cards do mesmo tamanho */
   box-sizing: border-box; /* Garante que padding e border não afetem o layout */
 }
 
