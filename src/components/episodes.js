@@ -10,7 +10,7 @@ function Episodes() {
 
   return (
     <div className="episodes-container">
-      <button onClick={() => navigate(-1)} className="back-button left">
+      <button onClick={() => navigate("/home")} className="back-button left">
         <i className="fas fa-undo-alt"></i>
       </button>
       <button onClick={() => navigate("/home")} className="back-button right">
